@@ -9,13 +9,23 @@ class Chatty extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
           child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
             'Mencoba Fonts baru',
             style: GoogleFonts.poppins(
                 textStyle:
-                    const TextStyle(fontSize: 40, fontWeight: FontWeight.w300)),
-          )
+                    const TextStyle(fontSize: 20, fontWeight: FontWeight.w300)),
+            textAlign: TextAlign.center,
+          ),
+          Text(
+            'perubahan',
+            style: GoogleFonts.poppins(
+                textStyle:
+                    const TextStyle(fontSize: 20, fontWeight: FontWeight.w300)),
+            textAlign: TextAlign.center,
+          ),
         ],
       )),
     );
